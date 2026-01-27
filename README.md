@@ -129,7 +129,7 @@ make exec
 | Thêm vào cuối | O(1)* | **O(1)** ✅ |
 | Thêm vào đầu | O(n) | **O(1)** ✅ |
 | Thêm vào giữa | O(n) | O(n)** |
-| Xóa cuối | **O(1)** | **O(1)** ✅ |
+| Xóa cuối | **O(1)** ✅ | **O(1)** ✅ |
 | Xóa đầu | O(n) | **O(1)** ✅ |
 | Xóa ở giữa | O(n) | O(n)** |
 | Tìm kiếm | O(n) | O(n) |
