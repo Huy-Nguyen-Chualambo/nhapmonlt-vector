@@ -53,7 +53,7 @@ nhapmonlt-vector/
 
 **Cách 1: Clone từ Git**
 ```bash
-git clone https://github.com/<username>/nhapmonlt-vector.git
+git clone https://github.com/HoangTuBangGia/nhapmonlt-vector.git
 cd nhapmonlt-vector
 ```
 
