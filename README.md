@@ -123,18 +123,14 @@ make exec
 
 ##  So sánh Vector và Doubly Linked List
 
-| Thao tác | Vector | Doubly Linked List |
-|----------|--------|---------------------|
-| Truy cập phần tử [i] | **O(1)** ✅ | O(n) |
-| Thêm vào cuối | O(1)* | **O(1)** ✅ |
-| Thêm vào đầu | O(n) | **O(1)** ✅ |
-| Thêm vào giữa | O(n) | O(n)** |
-| Xóa cuối | **O(1)** ✅ | **O(1)** ✅ |
-| Xóa đầu | O(n) | **O(1)** ✅ |
-| Xóa ở giữa | O(n) | O(n)** |
-| Tìm kiếm | O(n) | O(n) |
-| Bộ nhớ | Liền kề (cache-friendly) | Phân tán |
-| Quản lý bộ nhớ | Tự động | Thủ công |
+## So sánh các cấu trúc dữ liệu (Linked List vs. std::vector)
+
+| Tiêu chí so sánh | Danh sách liên kết đôi (Linked List) | Mảng động (std::vector) |
+| :--- | :--- | :--- |
+| **Quản lý bộ nhớ** | Linh hoạt, cấp phát theo Node; tốn thêm bộ nhớ cho con trỏ `prev`, `next`. | Lưu trữ liên tiếp; tiết kiệm con trỏ nhưng có thể cấp phát dư (`capacity`). |
+| **Tốc độ truy xuất** | **Chậm $O(n)$**: Phải duyệt tuần tự từ đầu danh sách. | **Nhanh $O(1)$**: Truy xuất trực tiếp qua chỉ số (index). |
+| **Tốc độ Thêm/Xóa**| **Nhanh $O(1)$**: Chỉ cần thay đổi liên kết con trỏ nếu đã biết vị trí. | **Chậm $O(n)$**: Phải dịch chuyển các phần tử phía sau khi thao tác ở giữa. |
+| **Độ phức tạp Code** | **Cao**: Phải quản lý con trỏ và bộ nhớ thủ công (`new`/`delete`). | **Thấp**: Sử dụng thư viện STL tối ưu, code ngắn gọn và an toàn hơn. |
 
 (*) O(1) trung bình, có thể O(n) khi phải mở rộng mảng
 
